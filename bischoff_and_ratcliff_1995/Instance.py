@@ -83,8 +83,10 @@ class Instance:
         self.o = o
         self.m = m
 
-        # make dataframe
-        self.df = pd.DataFrame(
+        return
+
+    def to_df(self):
+        return pd.DataFrame(
             data={
                 "Box type": [i for i in range(1, self.n + 1)],
                 "Length": [self.d[i][0] for i in range(self.n)],
@@ -96,8 +98,6 @@ class Instance:
                 "Quantity": [self.m[i] for i in range(self.n)],
             }
         )
-
-        return
 
     def to_dict(self):
         return {
@@ -116,5 +116,5 @@ class Instance:
                     "quantity": self.m[i],
                 }
                 for i in range(self.n)
-            ]
+            ],
         }

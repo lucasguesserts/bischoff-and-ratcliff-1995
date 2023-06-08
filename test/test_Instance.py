@@ -25,7 +25,7 @@ def test_case_1():
         s=2507305,
     )
     expected = get_expected("case_1")
-    pd.testing.assert_frame_equal(actual.df, expected["df"])
+    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
     assert actual.to_dict() == expected["dict"]
     return
 
@@ -40,7 +40,7 @@ def test_case_2():
         s=2508405,
     )
     expected = get_expected("case_2")
-    pd.testing.assert_frame_equal(actual.df, expected["df"])
+    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
     assert actual.to_dict() == expected["dict"]
     return
 
@@ -55,7 +55,7 @@ def test_case_3():
         s=2506505,
     )
     expected = get_expected("case_3")
-    pd.testing.assert_frame_equal(actual.df, expected["df"])
+    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
     assert actual.to_dict() == expected["dict"]
     return
 
@@ -70,7 +70,7 @@ def test_case_4():
         s=2506105,
     )
     expected = get_expected("case_4")
-    pd.testing.assert_frame_equal(actual.df, expected["df"])
+    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
     assert actual.to_dict() == expected["dict"]
     return
 
@@ -85,7 +85,7 @@ def test_case_5():
         s=2504605,
     )
     expected = get_expected("case_5")
-    pd.testing.assert_frame_equal(actual.df, expected["df"])
+    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
     assert actual.to_dict() == expected["dict"]
     return
 
@@ -100,7 +100,7 @@ def test_case_6():
         s=2502605,
     )
     expected = get_expected("case_6")
-    pd.testing.assert_frame_equal(actual.df, expected["df"])
+    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
     assert actual.to_dict() == expected["dict"]
     return
 
@@ -116,6 +116,6 @@ def test_case_7():
         s=2502505,
     )
     expected = get_expected("case_7")
-    pd.testing.assert_frame_equal(actual.df, expected["df"])
+    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
     assert actual.to_dict() == expected["dict"]
     return
