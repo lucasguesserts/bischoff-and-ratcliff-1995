@@ -1,7 +1,5 @@
 import math
 
-import pandas as pd
-
 from .Random import Random
 
 
