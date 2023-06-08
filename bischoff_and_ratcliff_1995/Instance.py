@@ -8,8 +8,10 @@ from .Random import Random
 class Instance:
     NUMBER_OF_INITIAL_RANDOM_NUMBERS_TO_DISCARD = 10
 
-    def __init__(self, T_c, n, a, b, L, s):
+    def __init__(self, C, n, a, b, L, s):
         # save parameters
+        self.C = C
+        T_c = math.prod(C.values())
         self.T_c = T_c
         self.n = n
         self.a = a
@@ -101,7 +103,11 @@ class Instance:
         return {
             "type": "input",
             "version": "0.0.0",
-            "large_object": {},
+            "large_object": {
+                "length": self.C["length"],
+                "width": self.C["width"],
+                "height": self.C["height"],
+            },
             "small_items": [
                 {
                     "length": self.d[i][0],
