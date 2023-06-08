@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
 import json
+import os
 
 import bischoff_and_ratcliff_1995 as br95
 
 # input parameters
-OUTPUT_FILE_PATH = "instances.json"
+OUTPUT_DIR = "data/"
+ALL_INSTANCES_FILE_PATH = os.path.join(OUTPUT_DIR, "data.json")
 NUMBER_OF_INSTANCES_PER_BOX_TYPE = 100
 CONTAINER_DIMENSIONS = {
     "length": 587,
@@ -33,6 +35,14 @@ def initialize_instances(number_of_different_box_types_list):
     }
 
 
+def write_instance(instance_set_number, instance_number, instance):
+    output_dir = os.path.join(OUTPUT_DIR, f"set_{instance_set_number}")
+    os.makedirs(output_dir, exist_ok=True)
+    file_path = os.path.join(output_dir, f"{instance_number}.json")
+    with open(file_path, "w") as file:
+        json.dump(instance.to_dict(), file, indent=2)
+
+
 if __name__ == "__main__":
     instances = initialize_instances(NUMBER_OF_DIFFERENT_BOX_TYPES_LIST)
     for instance_set_number, number_of_different_box_types in enumerate(
@@ -47,8 +57,10 @@ if __name__ == "__main__":
                 L=BOX_STABILITY_LIMIT,
                 s=random_seed_generator(instance_number),
             )
+            write_instance(instance_set_number, instance_number, instance)
             instances[set_name(instance_set_number)].append(instance.to_dict())
 
-    with open(OUTPUT_FILE_PATH, "w") as file:
+    with open(ALL_INSTANCES_FILE_PATH, "w") as file:
         json.dump(instances, file, indent=2)
-        print(f"instances written into '{OUTPUT_FILE_PATH}'")
+
+    print(f"instances written into the directory '{OUTPUT_DIR}'")

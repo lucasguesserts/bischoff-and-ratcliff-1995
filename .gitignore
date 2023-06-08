@@ -1,7 +1,8 @@
 *foo*
 *goo*
 *hoo*
-instances.json
+data/data.json
+data/set_?/
 
 # python
 *.egg-info*
