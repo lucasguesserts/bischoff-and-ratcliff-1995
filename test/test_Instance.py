@@ -2,17 +2,11 @@ import json
 
 import bischoff_and_ratcliff_1995 as br95
 
-import pandas as pd
 
-
-def get_expected(case_name):
-    expected_df = pd.read_csv(f"test/data/{case_name}.csv")
+def expected(case_name):
     with open(f"test/data/{case_name}.json", "r") as file:
-        expected_dict = json.load(file)
-    return {
-        "df": expected_df,
-        "dict": expected_dict
-    }
+        expected = json.load(file)
+    return expected
 
 
 def test_case_1():
@@ -24,9 +18,7 @@ def test_case_1():
         L=2,
         s=2507305,
     )
-    expected = get_expected("case_1")
-    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
-    assert actual.to_dict() == expected["dict"]
+    assert actual.to_dict() == expected("case_1")
     return
 
 
@@ -39,9 +31,7 @@ def test_case_2():
         L=2,
         s=2508405,
     )
-    expected = get_expected("case_2")
-    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
-    assert actual.to_dict() == expected["dict"]
+    assert actual.to_dict() == expected("case_2")
     return
 
 
@@ -54,9 +44,7 @@ def test_case_3():
         L=2,
         s=2506505,
     )
-    expected = get_expected("case_3")
-    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
-    assert actual.to_dict() == expected["dict"]
+    assert actual.to_dict() == expected("case_3")
     return
 
 
@@ -69,9 +57,7 @@ def test_case_4():
         L=2,
         s=2506105,
     )
-    expected = get_expected("case_4")
-    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
-    assert actual.to_dict() == expected["dict"]
+    assert actual.to_dict() == expected("case_4")
     return
 
 
@@ -84,9 +70,7 @@ def test_case_5():
         L=2,
         s=2504605,
     )
-    expected = get_expected("case_5")
-    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
-    assert actual.to_dict() == expected["dict"]
+    assert actual.to_dict() == expected("case_5")
     return
 
 
@@ -99,9 +83,7 @@ def test_case_6():
         L=2,
         s=2502605,
     )
-    expected = get_expected("case_6")
-    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
-    assert actual.to_dict() == expected["dict"]
+    assert actual.to_dict() == expected("case_6")
     return
 
 
@@ -115,7 +97,5 @@ def test_case_7():
         L=2,
         s=2502505,
     )
-    expected = get_expected("case_7")
-    pd.testing.assert_frame_equal(actual.to_df(), expected["df"])
-    assert actual.to_dict() == expected["dict"]
+    assert actual.to_dict() == expected("case_7")
     return

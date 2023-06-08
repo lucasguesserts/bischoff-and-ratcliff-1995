@@ -85,20 +85,6 @@ class Instance:
 
         return
 
-    def to_df(self):
-        return pd.DataFrame(
-            data={
-                "Box type": [i for i in range(1, self.n + 1)],
-                "Length": [self.d[i][0] for i in range(self.n)],
-                "Vert. L": [self.o[i][0] for i in range(self.n)],
-                "Width": [self.d[i][1] for i in range(self.n)],
-                "Vert. W": [self.o[i][1] for i in range(self.n)],
-                "Height": [self.d[i][2] for i in range(self.n)],
-                "Vert. H": [self.o[i][2] for i in range(self.n)],
-                "Quantity": [self.m[i] for i in range(self.n)],
-            }
-        )
-
     def to_dict(self):
         return {
             "type": "input",
