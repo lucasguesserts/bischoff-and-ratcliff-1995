@@ -1,2 +1,1 @@
-def f(x):
-    return 2 * x
+from .Random import Random
