@@ -14,3 +14,7 @@ $ pytest
 $ ./bin/generate_all_instances
 instances written into 'instances.json'
 ```
+
+## File Format
+
+The [file format](https://github.com/lucasguesserts/packing-visualizer/tree/trunk/src/file_format/input) is based on the specifications in the [packing-visualizer project](https://github.com/lucasguesserts/packing-visualizer/).
