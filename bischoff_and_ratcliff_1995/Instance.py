@@ -96,3 +96,19 @@ class Instance:
         )
 
         return
+
+    def to_dict(self):
+        return {
+            "type": "input",
+            "version": "0.0.0",
+            "large_object": {},
+            "small_items": [
+                {
+                    "length": self.d[i][0],
+                    "width": self.d[i][1],
+                    "height": self.d[i][2],
+                    "quantity": self.m[i],
+                }
+                for i in range(self.n)
+            ]
+        }
