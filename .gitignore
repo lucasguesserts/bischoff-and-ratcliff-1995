@@ -2,7 +2,7 @@
 *goo*
 *hoo*
 data/data.json
-data/set_?/
+data/set_*/
 
 # python
 *.egg-info*
