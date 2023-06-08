@@ -5,6 +5,12 @@ Based on the paper E.E. Bischoff and M.S.W. Ratcliff, "Issues in the development
 ## Usage
 
 ```sh
-pip install -e .
-pytest
+$ pip install -e .
+(...) pip install log stuff (...)
+$ pytest
+=== test session starts ===
+(...) pytest logs (...)
+=== X passed in Y.ZZ s ===
+$ ./bin/generate_all_instances
+instances written into 'instances.json'
 ```
