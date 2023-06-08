@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+title: bischoff-and-ratcliff-1995
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Lucas
+    family-names: Guesser
+    email: lucasguesserts@gmail.com
+    orcid: 'https://orcid.org/0009-0000-6272-4061'
+identifiers:
+  - type: url
+    value: 'https://github.com/lucasguesserts'
+    description: github
+  - type: url
+    value: 'https://www.linkedin.com/in/lucasguesserts/'
+    description: linkedin
+  - type: url
+    value: 'https://lattes.cnpq.br/5397783811561318'
+    description: lattes
+repository-code: 'https://github.com/lucasguesserts/bischoff-and-ratcliff-1995'
+abstract: >-
+  Generator of instances, based on the paper
+  E.E. Bischoff and M.S.W. Ratcliff,
+  "Issues in the development of
+  Approaches to Container Loading",
+  OMEGA, vol.23, no.4, (1995) pp 377-390.
+keywords:
+  - container loading problem
+  - knapsack problem
+  - single large object placement problem (slopp)
+  - packing problem
+license: MIT
