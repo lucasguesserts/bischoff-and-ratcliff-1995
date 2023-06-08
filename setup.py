@@ -22,5 +22,5 @@ setup(
     # Options
     install_requires=["pytest"],
     python_requires=">=3.0",
-    package_data={"pkg_name": ["bin/generate_all_instances"]},
+    scripts=["bin/generate_all_instances"],
 )
