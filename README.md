@@ -11,8 +11,8 @@ $ pytest
 === test session starts ===
 (...) pytest logs (...)
 === X passed in Y.ZZ s ===
-$ ./bin/generate_all_instances
-instances written into 'instances.json'
+$ generate_all_instances
+instances written into the directory 'data/'
 ```
 
 ## File Format
