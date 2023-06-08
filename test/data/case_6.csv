@@ -1,0 +1,13 @@
+Box type,Length,Vert. L,Width,Vert. W,Height,Vert. H,Quantity
+1,49,False,25,True,21,True,13
+2,60,True,51,True,41,True,10
+3,103,True,76,True,64,True,5
+4,95,True,70,True,62,True,13
+5,111,False,49,True,26,True,13
+6,85,True,84,True,72,True,15
+7,48,True,36,True,31,True,13
+8,86,False,76,False,38,True,13
+9,71,True,48,True,47,True,12
+10,90,False,43,True,33,True,12
+11,98,False,52,True,44,True,13
+12,73,False,37,True,23,True,6
