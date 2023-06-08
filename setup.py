@@ -21,6 +21,7 @@ setup(
     # Options
     install_requires=[
         'pytest',
+        'pandas'
     ],
     python_requires='>=3.0',
 )
