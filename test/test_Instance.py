@@ -1,4 +1,5 @@
 import json
+import pytest
 
 import bischoff_and_ratcliff_1995 as br95
 
@@ -9,93 +10,26 @@ def expected(case_name):
     return expected
 
 
-def test_case_1():
+@pytest.mark.parametrize(
+    "number_of_box_types, seed, case_name",
+    [
+        (8, 2507305, "case_1"),
+        (10, 2508405, "case_2"),
+        (12, 2506505, "case_3"),
+        (8, 2506105, "case_4"),
+        (10, 2504605, "case_5"),
+        (12, 2502605, "case_6"),
+        (3, 2502505, "case_7"),
+    ],
+)
+def test_case(number_of_box_types, seed, case_name):
     actual = br95.Instance(
         C={"length": 587, "width": 233, "height": 220},
-        n=8,
+        n=number_of_box_types,
         a=[30, 25, 20],
         b=[120, 100, 80],
         L=2,
-        s=2507305,
+        s=seed,
     )
-    assert actual.to_dict() == expected("case_1")
-    return
-
-
-def test_case_2():
-    actual = br95.Instance(
-        C={"length": 587, "width": 233, "height": 220},
-        n=10,
-        a=[30, 25, 20],
-        b=[120, 100, 80],
-        L=2,
-        s=2508405,
-    )
-    assert actual.to_dict() == expected("case_2")
-    return
-
-
-def test_case_3():
-    actual = br95.Instance(
-        C={"length": 587, "width": 233, "height": 220},
-        n=12,
-        a=[30, 25, 20],
-        b=[120, 100, 80],
-        L=2,
-        s=2506505,
-    )
-    assert actual.to_dict() == expected("case_3")
-    return
-
-
-def test_case_4():
-    actual = br95.Instance(
-        C={"length": 587, "width": 233, "height": 220},
-        n=8,
-        a=[30, 25, 20],
-        b=[120, 100, 80],
-        L=2,
-        s=2506105,
-    )
-    assert actual.to_dict() == expected("case_4")
-    return
-
-
-def test_case_5():
-    actual = br95.Instance(
-        C={"length": 587, "width": 233, "height": 220},
-        n=10,
-        a=[30, 25, 20],
-        b=[120, 100, 80],
-        L=2,
-        s=2504605,
-    )
-    assert actual.to_dict() == expected("case_5")
-    return
-
-
-def test_case_6():
-    actual = br95.Instance(
-        C={"length": 587, "width": 233, "height": 220},
-        n=12,
-        a=[30, 25, 20],
-        b=[120, 100, 80],
-        L=2,
-        s=2502605,
-    )
-    assert actual.to_dict() == expected("case_6")
-    return
-
-
-def test_case_7():
-    # this is the first case of the BR1 instances
-    actual = br95.Instance(
-        C={"length": 587, "width": 233, "height": 220},
-        n=3,
-        a=[30, 25, 20],
-        b=[120, 100, 80],
-        L=2,
-        s=2502505,
-    )
-    assert actual.to_dict() == expected("case_7")
+    assert actual.to_dict() == expected(case_name)
     return
