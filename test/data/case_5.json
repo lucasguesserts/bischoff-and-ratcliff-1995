@@ -1,70 +1,92 @@
 {
   "type": "input",
-  "version": "0.0.0",
+  "version": "0.3.0",
   "large_object": {
-    "length": 587,
-    "width": 233,
-    "height": 220
+    "measurement": {
+      "x": 587,
+      "y": 233,
+      "z": 220
+    }
   },
   "small_items": [
     {
-      "length": 89,
-      "width": 78,
-      "height": 50,
+      "measurement": {
+        "x": 89,
+        "y": 78,
+        "z": 50
+      },
       "quantity": 9
     },
     {
-      "length": 73,
-      "width": 65,
-      "height": 46,
+      "measurement": {
+        "x": 73,
+        "y": 65,
+        "z": 46
+      },
       "quantity": 10
     },
     {
-      "length": 94,
-      "width": 66,
-      "height": 39,
+      "measurement": {
+        "x": 94,
+        "y": 66,
+        "z": 39
+      },
       "quantity": 5
     },
     {
-      "length": 66,
-      "width": 59,
-      "height": 42,
+      "measurement": {
+        "x": 66,
+        "y": 59,
+        "z": 42
+      },
       "quantity": 11
     },
     {
-      "length": 106,
-      "width": 93,
-      "height": 70,
+      "measurement": {
+        "x": 106,
+        "y": 93,
+        "z": 70
+      },
       "quantity": 18
     },
     {
-      "length": 80,
-      "width": 71,
-      "height": 62,
+      "measurement": {
+        "x": 80,
+        "y": 71,
+        "z": 62
+      },
       "quantity": 16
     },
     {
-      "length": 60,
-      "width": 36,
-      "height": 26,
+      "measurement": {
+        "x": 60,
+        "y": 36,
+        "z": 26
+      },
       "quantity": 7
     },
     {
-      "length": 72,
-      "width": 31,
-      "height": 31,
+      "measurement": {
+        "x": 72,
+        "y": 31,
+        "z": 31
+      },
       "quantity": 14
     },
     {
-      "length": 63,
-      "width": 63,
-      "height": 31,
+      "measurement": {
+        "x": 63,
+        "y": 63,
+        "z": 31
+      },
       "quantity": 16
     },
     {
-      "length": 74,
-      "width": 39,
-      "height": 23,
+      "measurement": {
+        "x": 74,
+        "y": 39,
+        "z": 23
+      },
       "quantity": 5
     }
   ]
