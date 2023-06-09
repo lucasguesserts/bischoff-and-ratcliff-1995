@@ -15,7 +15,17 @@
         "y": 72,
         "z": 58
       },
-      "quantity": 14
+      "quantity": 14,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -23,7 +33,17 @@
         "y": 57,
         "z": 57
       },
-      "quantity": 11
+      "quantity": 11,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -31,7 +51,17 @@
         "y": 64,
         "z": 37
       },
-      "quantity": 19
+      "quantity": 19,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -39,7 +69,17 @@
         "y": 66,
         "z": 26
       },
-      "quantity": 13
+      "quantity": 13,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": false,
+          "zxy": false,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -47,7 +87,17 @@
         "y": 67,
         "z": 35
       },
-      "quantity": 13
+      "quantity": 13,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -55,7 +105,17 @@
         "y": 56,
         "z": 39
       },
-      "quantity": 12
+      "quantity": 12,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -63,7 +123,17 @@
         "y": 100,
         "z": 39
       },
-      "quantity": 11
+      "quantity": 11,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": false,
+          "zxy": false,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -71,7 +141,17 @@
         "y": 55,
         "z": 33
       },
-      "quantity": 10
+      "quantity": 10,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -79,7 +159,17 @@
         "y": 65,
         "z": 53
       },
-      "quantity": 10
+      "quantity": 10,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -87,7 +177,17 @@
         "y": 41,
         "z": 35
       },
-      "quantity": 12
+      "quantity": 12,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     }
   ]
 }

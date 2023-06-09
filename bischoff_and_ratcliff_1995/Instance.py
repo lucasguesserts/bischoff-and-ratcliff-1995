@@ -102,6 +102,16 @@ class Instance:
                         "z": self.d[i][2],
                     },
                     "quantity": self.m[i],
+                    "constraint": {
+                        "orientation": {
+                            "xyz": self.o[i][2],
+                            "yxz": self.o[i][2],
+                            "zyx": self.o[i][0],
+                            "xzy": self.o[i][1],
+                            "zxy": self.o[i][1],
+                            "yzx": self.o[i][0],
+                        },
+                    },
                 }
                 for i in range(self.n)
             ],

@@ -15,7 +15,17 @@
         "y": 25,
         "z": 21
       },
-      "quantity": 13
+      "quantity": 13,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -23,7 +33,17 @@
         "y": 51,
         "z": 41
       },
-      "quantity": 10
+      "quantity": 10,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -31,7 +51,17 @@
         "y": 76,
         "z": 64
       },
-      "quantity": 5
+      "quantity": 5,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -39,7 +69,17 @@
         "y": 70,
         "z": 62
       },
-      "quantity": 13
+      "quantity": 13,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -47,7 +87,17 @@
         "y": 49,
         "z": 26
       },
-      "quantity": 13
+      "quantity": 13,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -55,7 +105,17 @@
         "y": 84,
         "z": 72
       },
-      "quantity": 15
+      "quantity": 15,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -63,7 +123,17 @@
         "y": 36,
         "z": 31
       },
-      "quantity": 13
+      "quantity": 13,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -71,7 +141,17 @@
         "y": 76,
         "z": 38
       },
-      "quantity": 13
+      "quantity": 13,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": false,
+          "zxy": false,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -79,7 +159,17 @@
         "y": 48,
         "z": 47
       },
-      "quantity": 12
+      "quantity": 12,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -87,7 +177,17 @@
         "y": 43,
         "z": 33
       },
-      "quantity": 12
+      "quantity": 12,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -95,7 +195,17 @@
         "y": 52,
         "z": 44
       },
-      "quantity": 13
+      "quantity": 13,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -103,7 +213,17 @@
         "y": 37,
         "z": 23
       },
-      "quantity": 6
+      "quantity": 6,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     }
   ]
 }

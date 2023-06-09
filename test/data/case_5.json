@@ -15,7 +15,17 @@
         "y": 78,
         "z": 50
       },
-      "quantity": 9
+      "quantity": 9,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -23,7 +33,17 @@
         "y": 65,
         "z": 46
       },
-      "quantity": 10
+      "quantity": 10,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -31,7 +51,17 @@
         "y": 66,
         "z": 39
       },
-      "quantity": 5
+      "quantity": 5,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -39,7 +69,17 @@
         "y": 59,
         "z": 42
       },
-      "quantity": 11
+      "quantity": 11,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -47,7 +87,17 @@
         "y": 93,
         "z": 70
       },
-      "quantity": 18
+      "quantity": 18,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -55,7 +105,17 @@
         "y": 71,
         "z": 62
       },
-      "quantity": 16
+      "quantity": 16,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": true,
+          "xzy": true,
+          "zxy": true,
+          "yzx": true
+        }
+      }
     },
     {
       "measurement": {
@@ -63,7 +123,17 @@
         "y": 36,
         "z": 26
       },
-      "quantity": 7
+      "quantity": 7,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -71,7 +141,17 @@
         "y": 31,
         "z": 31
       },
-      "quantity": 14
+      "quantity": 14,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -79,7 +159,17 @@
         "y": 63,
         "z": 31
       },
-      "quantity": 16
+      "quantity": 16,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": false,
+          "zxy": false,
+          "yzx": false
+        }
+      }
     },
     {
       "measurement": {
@@ -87,7 +177,17 @@
         "y": 39,
         "z": 23
       },
-      "quantity": 5
+      "quantity": 5,
+      "constraint": {
+        "orientation": {
+          "xyz": true,
+          "yxz": true,
+          "zyx": false,
+          "xzy": true,
+          "zxy": true,
+          "yzx": false
+        }
+      }
     }
   ]
 }
