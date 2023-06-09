@@ -86,18 +86,32 @@ class Instance:
     def to_dict(self):
         return {
             "type": "input",
-            "version": "0.0.0",
+            "version": "0.3.0",
             "large_object": {
-                "length": self.C["length"],
-                "width": self.C["width"],
-                "height": self.C["height"],
+                "measurement": {
+                    "x": self.C["length"],
+                    "y": self.C["width"],
+                    "z": self.C["height"],
+                }
             },
             "small_items": [
                 {
-                    "length": self.d[i][0],
-                    "width": self.d[i][1],
-                    "height": self.d[i][2],
+                    "measurement": {
+                        "x": self.d[i][0],
+                        "y": self.d[i][1],
+                        "z": self.d[i][2],
+                    },
                     "quantity": self.m[i],
+                    "constraint": {
+                        "orientation": {
+                            "xyz": self.o[i][2],
+                            "yxz": self.o[i][2],
+                            "zyx": self.o[i][0],
+                            "xzy": self.o[i][1],
+                            "zxy": self.o[i][1],
+                            "yzx": self.o[i][0],
+                        },
+                    },
                 }
                 for i in range(self.n)
             ],
